@@ -39,37 +39,37 @@
         <ul class="nav-links">
           <li class="nav-item">
             <button id="nav-home" class="active" onclick="navigateTo('home')">
-              <span>🏠</span> Beranda
+              <span></span> Beranda
             </button>
           </li>
           <li class="nav-item">
             <button id="nav-explore" onclick="navigateTo('explore')">
-              <span>📖</span> Explore
+              <span></span> Explore
             </button>
           </li>
           <li class="nav-item">
             <button id="nav-tradelab" onclick="navigateTo('tradelab')">
-              <span>⚖️</span> Trade Lab
+              <span></span> Trade Lab
             </button>
           </li>
           <li class="nav-item">
             <button id="nav-challenge" onclick="navigateTo('challenge')">
-              <span>🎮</span> Challenge Zone
+              <span></span> Challenge Zone
             </button>
           </li>
           <li class="nav-item">
             <button id="nav-finalmission" onclick="navigateTo('finalmission')">
-              <span>🎯</span> Final Mission
+              <span></span> Final Mission
             </button>
           </li>
           <li class="nav-item">
             <button id="nav-achievement" onclick="navigateTo('achievement')">
-              <span>🏆</span> Achievement
+              <span></span> Achievement
             </button>
           </li>
           <li class="nav-item">
             <button id="nav-profile" onclick="navigateTo('profile')">
-              <span>👩‍🏫</span> Profil Guru
+              <span></span> Profil Guru
             </button>
           </li>
         </ul>
@@ -89,7 +89,7 @@
         </button>
 
         <!-- Reset Button -->
-        <button class="icon-btn" onclick="openModal('resetModal')" title="Reset Progres Belajar">
+        <button class="icon-btn nav-reset-btn" onclick="openModal('resetModal')" title="Reset Progres Belajar">
           <span>🔄</span>
         </button>
 
@@ -109,6 +109,7 @@
       <button id="mob-finalmission" onclick="navigateTo('finalmission')">🎯 Final Mission (Evaluasi)</button>
       <button id="mob-achievement" onclick="navigateTo('achievement')">🏆 Achievement (10 Badges)</button>
       <button id="mob-profile" onclick="navigateTo('profile')">👩‍🏫 Profil Guru (Pengembang)</button>
+      <button class="mob-reset-btn" onclick="openModal('resetModal')">🔄 Reset Progres Belajar</button>
     </div>
     <!-- Mobile Nav Backdrop -->
     <div class="mobile-nav-backdrop" id="mobileNavBackdrop" onclick="toggleMobileNav()"></div>
@@ -233,7 +234,7 @@
       <!-- User Progress Overview Card -->
       <div class="progress-summary-card">
         <div class="progress-info">
-          <h4><span>📊</span> Progres Belajar Mandiri</h4>
+          <h4>Progres Belajar Mandiri</h4>
           <p>Selesaikan seluruh modul, simulasi Trade Lab, permainan edukasi, dan ujian akhir untuk mencapai predikat <strong>Master Trader</strong>.</p>
           <div class="progress-bar-container">
             <div id="homeProgressBar" class="progress-bar-fill"></div>
@@ -262,7 +263,7 @@
 
       <!-- Petunjuk Penggunaan MPI (Instructions) -->
       <div class="instructions-card">
-        <h3><span>💡</span> Petunjuk Penggunaan Media Pembelajaran</h3>
+        <h3>Petunjuk Penggunaan Media Pembelajaran</h3>
         <div class="guide-steps">
           <div class="guide-step-item">
             <div class="step-num">1</div>
@@ -368,7 +369,7 @@
         </div>
 
         <div class="content-block">
-          <h4><span>🌐</span> 1. Hakikat Perdagangan Internasional</h4>
+          <h4>1. Hakikat Perdagangan Internasional</h4>
           <p>
             Tidak ada satu pun negara di dunia yang mampu memenuhi seluruh kebutuhan penduduknya secara mandiri tanpa berinteraksi dengan bangsa lain. <strong>Perdagangan Internasional</strong> adalah aktivitas perdagangan atau pertukaran barang dan jasa yang dilakukan oleh penduduk suatu negara dengan penduduk negara lain atas dasar kesepakatan bersama yang saling menguntungkan.
           </p>
@@ -402,7 +403,7 @@
         </div>
 
         <div class="content-block">
-          <h4><span>✨</span> 2. Faktor Pendorong & Teori Lengkap Perdagangan Internasional</h4>
+          <h4>2. Faktor Pendorong & Teori Lengkap Perdagangan Internasional</h4>
           <p>
             Mengapa negara-negara saling bertransaksi? Pendorong utamanya mencakup perbedaan kekayaan Sumber Daya Alam (SDA), iklim, variasi biaya produksi, keahlian tenaga kerja, penguasaan IPTEK, dan selera konsumen.
           </p>
@@ -415,10 +416,10 @@
             <!-- Teori 1: Merkantilisme -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 01</span>
                 <span class="theory-era-badge era-pre">Abad 16 - 18</span>
-                <span style="font-size: 1.2rem;">🪙</span>
               </div>
-              <h5>1. Teori Merkantilisme</h5>
+              <h5>Teori Merkantilisme</h5>
               <div class="theory-tokoh">Tokoh: Jean Bodin, Thomas Mun, J.B. Colbert</div>
               <p>Mengukur kekayaan suatu negara dari seberapa banyak timbunan logam mulia (emas & perak) yang dimiliki. Negara harus memaksimalkan ekspor dan membatasi impor sekecil mungkin melalui proteksionisme ketat (*Zero-Sum Game*).</p>
               <div class="theory-key-point">
@@ -429,10 +430,10 @@
             <!-- Teori 2: Keunggulan Mutlak -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 02</span>
                 <span class="theory-era-badge era-classic">Teori Klasik (1776)</span>
-                <span style="font-size: 1.2rem;">🏛️</span>
               </div>
-              <h5>2. Keunggulan Mutlak (Absolute Advantage)</h5>
+              <h5>Keunggulan Mutlak (Absolute Advantage)</h5>
               <div class="theory-tokoh">Tokoh: Adam Smith (*The Wealth of Nations*)</div>
               <p>Membantah merkantilisme. Perdagangan saling menguntungkan (*Positive-Sum Game*) jika tiap negara berspesialisasi memproduksi barang yang memiliki efisiensi mutlak lebih tinggi (biaya produksi terendah atau hasil terbanyak).</p>
               <div class="theory-key-point">
@@ -443,10 +444,10 @@
             <!-- Teori 3: Keunggulan Komparatif -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 03</span>
                 <span class="theory-era-badge era-classic">Teori Klasik (1817)</span>
-                <span style="font-size: 1.2rem;">⚖️</span>
               </div>
-              <h5>3. Keunggulan Komparatif (Comparative Advantage)</h5>
+              <h5>Keunggulan Komparatif (Comparative Advantage)</h5>
               <div class="theory-tokoh">Tokoh: David Ricardo</div>
               <p>Meskipun suatu negara kalah mutlak di semua jenis barang dibanding mitra dagangnya, perdagangan tetap menguntungkan asalkan berspesialisasi pada barang dengan <strong>biaya peluang (*opportunity cost*)</strong> paling kecil.</p>
               <div class="theory-key-point">
@@ -457,10 +458,10 @@
             <!-- Teori 4: Biaya Alternatif -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 04</span>
                 <span class="theory-era-badge era-classic">Klasik-Neoklasik (1936)</span>
-                <span style="font-size: 1.2rem;">📈</span>
               </div>
-              <h5>4. Teori Biaya Alternatif (Opportunity Cost)</h5>
+              <h5>Teori Biaya Alternatif (Opportunity Cost)</h5>
               <div class="theory-tokoh">Tokoh: Gottfried Haberler</div>
               <p>Menyempurnakan kelemahan Ricardo yang hanya berpijak pada nilai tenaga kerja (*labor theory of value*). Haberler menggunakan pendekatan Kurva Kemungkinan Produksi (PPF) untuk mengukur pengorbanan unit produk lain.</p>
               <div class="theory-key-point">
@@ -471,10 +472,10 @@
             <!-- Teori 5: Proporsi Faktor Heckscher-Ohlin -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 05</span>
                 <span class="theory-era-badge era-modern">Teori Modern (1919/1933)</span>
-                <span style="font-size: 1.2rem;">👥</span>
               </div>
-              <h5>5. Proporsi Faktor (Heckscher-Ohlin / H-O)</h5>
+              <h5>Proporsi Faktor (Heckscher-Ohlin / H-O)</h5>
               <div class="theory-tokoh">Tokoh: Eli Heckscher & Bertil Ohlin</div>
               <p>Perdagangan terjadi karena perbedaan ketersediaan faktor produksi (*factor endowments*). Negara dengan tenaga kerja melimpah akan mengekspor barang padat karya (*labor-intensive*); negara berlimpah modal mengekspor barang padat modal (*capital-intensive*).</p>
               <div class="theory-key-point">
@@ -485,10 +486,10 @@
             <!-- Teori 6: Paradoks Leontief -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 06</span>
                 <span class="theory-era-badge era-modern">Uji Empiris (1953)</span>
-                <span style="font-size: 1.2rem;">🔍</span>
               </div>
-              <h5>6. Teori Paradoks Leontief</h5>
+              <h5>Teori Paradoks Leontief</h5>
               <div class="theory-tokoh">Tokoh: Wassily Leontief (Peraih Nobel Ekonomi)</div>
               <p>Hasil penelitian empiris pada data ekonomi AS yang mengejutkan: AS sebagai negara paling kaya modal (*capital-rich*) ternyata komposisi ekspornya justru lebih padat karya dibanding barang impornya, mematahkan asumsi murni H-O.</p>
               <div class="theory-key-point">
@@ -499,10 +500,10 @@
             <!-- Teori 7: Siklus Hidup Produk -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 07</span>
                 <span class="theory-era-badge era-modern">Teori Modern (1966)</span>
-                <span style="font-size: 1.2rem;">🔄</span>
               </div>
-              <h5>7. Siklus Hidup Produk (Product Life Cycle)</h5>
+              <h5>Siklus Hidup Produk (Product Life Cycle)</h5>
               <div class="theory-tokoh">Tokoh: Raymond Vernon</div>
               <p>Pola ekspor-impor komoditas bergeser seiring daur hidup produk melalui 3 tahap: (1) Tahap Inovasi Produk Baru di negara maju, (2) Tahap Pematangan (ekspor ke negara lain), dan (3) Tahap Standardisasi (manufaktur berpindah ke negara berkembang berupah rendah).</p>
               <div class="theory-key-point">
@@ -513,10 +514,10 @@
             <!-- Teori 8: Skala Ekonomi & New Trade Theory -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 08</span>
                 <span class="theory-era-badge era-modern">Teori Modern (1979)</span>
-                <span style="font-size: 1.2rem;">🏭</span>
               </div>
-              <h5>8. Skala Ekonomi & New Trade Theory</h5>
+              <h5>Skala Ekonomi & New Trade Theory</h5>
               <div class="theory-tokoh">Tokoh: Paul Krugman (Peraih Nobel Ekonomi 2008)</div>
               <p>Perdagangan terjadi bukan hanya karena perbedaan komparatif, melainkan karena *economies of scale* (skala ekonomis produksi massal) dan keinginan konsumen menikmati keragaman variasi produk (*intra-industry trade* antarnegara maju).</p>
               <div class="theory-key-point">
@@ -527,18 +528,17 @@
             <!-- Teori 9: Keunggulan Kompetitif Diamond Model -->
             <div class="theory-card-item">
               <div class="theory-top-meta">
+                <span class="theory-number-badge">Teori 09</span>
                 <span class="theory-era-badge era-modern">Teori Modern (1990)</span>
-                <span style="font-size: 1.2rem;">💎</span>
               </div>
-              <h5>9. Keunggulan Kompetitif (Diamond Model)</h5>
+              <h5>Keunggulan Kompetitif (Diamond Model)</h5>
               <div class="theory-tokoh">Tokoh: Michael E. Porter (Harvard Business School)</div>
               <p>Daya saing ekspor suatu bangsa ditentukan oleh interaksi 4 pilar berlian (*Diamond Model*): (1) Kondisi Faktor, (2) Kondisi Permintaan Domestik, (3) Industri Pendukung Terkait, serta (4) Strategi, Struktur, dan Persaingan Perusahaan.</p>
               <div class="theory-key-point">
                 <strong>Aplikasi:</strong> Daya saing ekspor tidak statis berdasarkan warisan alam, melainkan diciptakan (*created advantage*) melalui inovasi dan klaster industri.
               </div>
             </div>
-          </div>
-        </div>
+          </div>        </div>
 
         <!-- Contoh Kasus Nyata Indonesia -->
         <div class="case-study-box">
@@ -551,7 +551,7 @@
 
         <!-- Summary Box -->
         <div class="summary-box">
-          <h5><span>📝</span> Ringkasan Modul 1</h5>
+          <h5>Ringkasan Modul 1</h5>
           <ul class="summary-list">
             <li>Perdagangan internasional adalah pertukaran komoditas dan jasa melintasi perbatasan negara yang terdiri atas ekspor dan impor.</li>
             <li>Faktor pendorong mencakup keragaman SDA, penguasaan teknologi, selera masyarakat, dan efisiensi biaya produksi.</li>
@@ -563,7 +563,7 @@
         <!-- Mini Quiz Modul 1 -->
         <div class="mini-quiz-box">
           <div class="mini-quiz-header">
-            <h5><span>⚡</span> Mini Kuis Modul 1</h5>
+            <h5>Mini Kuis Modul 1</h5>
             <span style="font-size: 0.8rem; color: var(--gold-accent);">+30 XP</span>
           </div>
           <p class="mini-quiz-prompt">
@@ -604,7 +604,7 @@
         </div>
 
         <div class="content-block">
-          <h4><span>🛡️</span> 1. Perdagangan Bebas vs Proteksionisme</h4>
+          <h4>1. Perdagangan Bebas vs Proteksionisme</h4>
           <p>
             Dalam pergaulan ekonomi dunia, terdapat dua kutub pendekatan kebijakan perdagangan:
           </p>
@@ -615,54 +615,78 @@
         </div>
 
         <div class="content-block">
-          <h4><span>📋</span> 2. Ragam Instrumen Kebijakan Perdagangan Internasional</h4>
+          <h4>2. Ragam Instrumen Kebijakan Perdagangan Internasional</h4>
           <p>Berikut adalah 8 instrumen kebijakan perdagangan yang paling sering diterapkan oleh negara-negara di dunia:</p>
           
           <div class="policy-cards-grid">
             <div class="policy-mini-card">
-              <span class="pol-badge badge-blue">Instrumen 1</span>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-blue">Instrumen 1</span>
+                <span class="policy-card-icon">🏷️</span>
+              </div>
               <h5>Tarif / Bea Masuk</h5>
               <p>Pajak pembebanan atas barang impor saat melintasi kepabeanan. Menjadikan harga barang impor lebih mahal sehingga produk lokal tetap dapat bersaing.</p>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-red">Instrumen 2</span>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-red">Instrumen 2</span>
+                <span class="policy-card-icon">📦</span>
+              </div>
               <h5>Kuota Impor</h5>
               <p>Pembatasan kuantitas fisik maksimum (volume/tonase) komoditas asing yang boleh diimpor selama masa tertentu untuk mencegah membanjirnya produk asing.</p>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-green">Instrumen 3</span>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-green">Instrumen 3</span>
+                <span class="policy-card-icon">💰</span>
+              </div>
               <h5>Subsidi Ekspor</h5>
               <p>Bantuan finansial, insentif pajak, atau potongan bunga perbankan dari pemerintah kepada produsen lokal agar harga barang ekspornya lebih murah di pasar dunia.</p>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-red">Instrumen 4</span>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-red">Instrumen 4</span>
+                <span class="policy-card-icon">🚫</span>
+              </div>
               <h5>Larangan Impor & Ekspor</h5>
               <p>Regulasi mutlak yang melarang masuk atau keluarnya barang tertentu demi alasan keamanan, kedaulatan, moral, kesehatan, atau perlindungan SDA mentah.</p>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-amber">Instrumen 5</span>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-amber">Instrumen 5</span>
+                <span class="policy-card-icon">📉</span>
+              </div>
               <h5>Politik Dumping</h5>
               <p>Strategi diskriminasi harga di mana produsen menjual produk di pasar internasional dengan harga lebih rendah dibanding harga pasar dalam negerinya.</p>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-blue">Instrumen 6</span>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-blue">Instrumen 6</span>
+                <span class="policy-card-icon">🛡️</span>
+              </div>
               <h5>Bea Masuk Anti-Dumping (BMAD)</h5>
               <p>Pungutan tambahan resmi yang sah di bawah regulasi WTO untuk memulihkan kerugian industri lokal yang diserang produk impor berharga dumping.</p>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-green">Instrumen 7</span>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-green">Instrumen 7</span>
+                <span class="policy-card-icon">🏆</span>
+              </div>
               <h5>Premi & Insentif Ekspor</h5>
               <p>Bonus penghargaan atau hadiah khusus dari pemerintah kepada pelaku usaha yang berhasil meningkatkan volume ekspor dan mutu produk nasional.</p>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-amber">Instrumen 8</span>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-amber">Instrumen 8</span>
+                <span class="policy-card-icon">⚖️</span>
+              </div>
               <h5>Diskriminasi Harga</h5>
               <p>Penetapan harga yang berbeda untuk satu jenis barang yang sama terhadap negara pembeli yang berlainan sesuai perjanjian bilateral.</p>
             </div>
@@ -680,7 +704,7 @@
 
         <!-- Summary Box -->
         <div class="summary-box">
-          <h5><span>📝</span> Ringkasan Modul 2</h5>
+          <h5>Ringkasan Modul 2</h5>
           <ul class="summary-list">
             <li>Kebijakan perdagangan internasional dirancang antara tujuan membuka pasar (perdagangan bebas) atau memproteksi industri lokal.</li>
             <li>Tarif bea masuk dan kuota impor mengendalikan pasokan barang luar negeri di pasar domestik.</li>
@@ -692,7 +716,7 @@
         <!-- Mini Quiz Modul 2 -->
         <div class="mini-quiz-box">
           <div class="mini-quiz-header">
-            <h5><span>⚡</span> Mini Kuis Modul 2</h5>
+            <h5>Mini Kuis Modul 2</h5>
             <span style="font-size: 0.8rem; color: var(--gold-accent);">+30 XP</span>
           </div>
           <p class="mini-quiz-prompt">
@@ -733,7 +757,7 @@
         </div>
 
         <div class="content-block">
-          <h4><span>⚖️</span> 1. Dua Sisi Mata Uang Kebijakan Perdagangan</h4>
+          <h4>1. Dua Sisi Mata Uang Kebijakan Perdagangan</h4>
           <p>
             Setiap instrumen kebijakan perdagangan internasional selalu memiliki efek timbal balik (*trade-off*). Keputusan yang menguntungkan salah satu pihak sering kali memberikan beban bagi pihak lainnya. Seorang pembuat kebijakan harus cermat menimbang kepentingan produsen, konsumen, dan kas negara.
           </p>
@@ -741,41 +765,96 @@
 
         <!-- Matriks Dampak Terhadap 5 Entitas -->
         <div class="content-block">
-          <h4><span>📊</span> 2. Dampak Kebijakan Proteksi (Tarif & Kuota)</h4>
+          <h4>2. Dampak Kebijakan Proteksi (Tarif & Kuota)</h4>
           <div class="policy-cards-grid">
             <div class="policy-mini-card">
-              <span class="pol-badge badge-green">Pihak 1: Produsen Lokal</span>
-              <h5>Dampak Positif & Negatif</h5>
-              <p><strong>Positif:</strong> Terhindar dari persaingan produk impor murah, omzet terjaga, dapat menyerap tenaga kerja lokal.<br>
-              <strong>Negatif:</strong> Bila proteksi berlarut-larut, produsen cenderung malas berinovasi dan tidak efisien.</p>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-green">Pihak 1</span>
+                <span class="policy-card-icon">🏭</span>
+              </div>
+              <h5>Produsen Lokal</h5>
+              <div class="impact-split">
+                <div class="impact-item impact-pos">
+                  <span class="impact-badge-pos">✓ Positif</span>
+                  <p>Terhindar dari persaingan produk impor murah, omzet terjaga, dapat menyerap tenaga kerja lokal.</p>
+                </div>
+                <div class="impact-item impact-neg">
+                  <span class="impact-badge-neg">✕ Negatif</span>
+                  <p>Bila proteksi berlarut-larut, produsen cenderung malas berinovasi dan tidak efisien.</p>
+                </div>
+              </div>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-red">Pihak 2: Konsumen</span>
-              <h5>Dampak Positif & Negatif</h5>
-              <p><strong>Positif:</strong> Kepastian standar kualitas barang domestik yang terawasi.<br>
-              <strong>Negatif:</strong> Harus membayar harga barang lebih mahal, serta pilihan variasi produk di pasar menjadi lebih sedikit.</p>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-red">Pihak 2</span>
+                <span class="policy-card-icon">🛒</span>
+              </div>
+              <h5>Konsumen Domestik</h5>
+              <div class="impact-split">
+                <div class="impact-item impact-pos">
+                  <span class="impact-badge-pos">✓ Positif</span>
+                  <p>Kepastian standar kualitas barang domestik yang terawasi dan perlindungan keamanan produk.</p>
+                </div>
+                <div class="impact-item impact-neg">
+                  <span class="impact-badge-neg">✕ Negatif</span>
+                  <p>Harus membayar harga barang lebih mahal, serta pilihan variasi produk di pasar menjadi lebih sedikit.</p>
+                </div>
+              </div>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-blue">Pihak 3: Pemerintah</span>
-              <h5>Dampak Positif & Negatif</h5>
-              <p><strong>Positif:</strong> Memperoleh pendapatan negara dari pos Bea Masuk dan Cukai serta menjaga stabilitas kurs rupiah.<br>
-              <strong>Negatif:</strong> Berisiko mendapat gugatan sengketa dagang dari negara mitra dagang di forum WTO.</p>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-blue">Pihak 3</span>
+                <span class="policy-card-icon">🏛️</span>
+              </div>
+              <h5>Pemerintah / Kas Negara</h5>
+              <div class="impact-split">
+                <div class="impact-item impact-pos">
+                  <span class="impact-badge-pos">✓ Positif</span>
+                  <p>Memperoleh pendapatan negara dari pos Bea Masuk dan Cukai serta menjaga stabilitas kurs rupiah.</p>
+                </div>
+                <div class="impact-item impact-neg">
+                  <span class="impact-badge-neg">✕ Negatif</span>
+                  <p>Berisiko mendapat gugatan sengketa dagang dari negara mitra dagang di forum WTO.</p>
+                </div>
+              </div>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-amber">Pihak 4: Kinerja Ekspor</span>
-              <h5>Dampak Positif & Negatif</h5>
-              <p><strong>Positif:</strong> Subsidi ekspor memacu penetrasi komoditas Indonesia di pasar global dan mendongkrak devisa.<br>
-              <strong>Negatif:</strong> Berpotensi memicu perang dagang balasan (*retaliasi*) dari negara pengimpor.</p>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-amber">Pihak 4</span>
+                <span class="policy-card-icon">🚢</span>
+              </div>
+              <h5>Kinerja Ekspor Nasional</h5>
+              <div class="impact-split">
+                <div class="impact-item impact-pos">
+                  <span class="impact-badge-pos">✓ Positif</span>
+                  <p>Subsidi ekspor memacu penetrasi komoditas Indonesia di pasar global dan mendongkrak devisa.</p>
+                </div>
+                <div class="impact-item impact-neg">
+                  <span class="impact-badge-neg">✕ Negatif</span>
+                  <p>Berpotensi memicu perang dagang balasan (*retaliasi*) tarif tinggi dari negara pengimpor.</p>
+                </div>
+              </div>
             </div>
 
             <div class="policy-mini-card">
-              <span class="pol-badge badge-blue">Pihak 5: Arus Impor</span>
-              <h5>Dampak Positif & Negatif</h5>
-              <p><strong>Positif:</strong> Impor barang modal (mesin teknologi tinggi) mempercepat industrialisasi domestik.<br>
-              <strong>Negatif:</strong> Impor barang konsumsi berlebihan menguras devisa dan mengancam industri dalam negeri.</p>
+              <div class="policy-card-header">
+                <span class="pol-badge badge-blue">Pihak 5</span>
+                <span class="policy-card-icon">📦</span>
+              </div>
+              <h5>Arus Impor Barang</h5>
+              <div class="impact-split">
+                <div class="impact-item impact-pos">
+                  <span class="impact-badge-pos">✓ Positif</span>
+                  <p>Impor barang modal (mesin teknologi tinggi) mempercepat industrialisasi dan efisiensi domestik.</p>
+                </div>
+                <div class="impact-item impact-neg">
+                  <span class="impact-badge-neg">✕ Negatif</span>
+                  <p>Impor barang konsumsi berlebihan menguras cadangan devisa dan mengancam industri dalam negeri.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -791,7 +870,7 @@
 
         <!-- Summary Box -->
         <div class="summary-box">
-          <h5><span>📝</span> Ringkasan Modul 3</h5>
+          <h5>Ringkasan Modul 3</h5>
           <ul class="summary-list">
             <li>Kebijakan proteksi melindungi produsen lokal namun berisiko membebani konsumen dengan harga yang lebih tinggi.</li>
             <li>Tarif impor menghasilkan penerimaan fiskal bagi pemerintah, sementara kuota impor mengunci jumlah ketersediaan fisik.</li>
@@ -803,7 +882,7 @@
         <!-- Mini Quiz Modul 3 -->
         <div class="mini-quiz-box">
           <div class="mini-quiz-header">
-            <h5><span>⚡</span> Mini Kuis Modul 3</h5>
+            <h5>Mini Kuis Modul 3</h5>
             <span style="font-size: 0.8rem; color: var(--gold-accent);">+30 XP</span>
           </div>
           <p class="mini-quiz-prompt">
@@ -868,7 +947,7 @@
 
           <!-- Poin-Poin Intisari yang Dibahas dalam Video -->
           <h5 style="font-size: 1.05rem; font-weight: 800; color: var(--gold-accent); margin: 24px 0 12px; display: flex; align-items: center; gap: 8px;">
-            <span>📌</span> Poin-Poin Intisari yang Dibahas dalam Video
+            Poin-Poin Intisari yang Dibahas dalam Video
           </h5>
           <div class="video-summary-grid">
             <div class="video-point-item">
@@ -895,7 +974,7 @@
           <!-- Catatan Pengayaan Teori yang Melengkapi Video -->
           <div style="margin-top: 24px; background: rgba(37, 99, 235, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
             <h6 style="font-size: 0.95rem; font-weight: 800; color: #38bdf8; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-              <span>💡</span> Pengayaan Materi: Teori-Teori yang Melengkapi Video Ini
+              Pengayaan Materi: Teori-Teori yang Melengkapi Video Ini
             </h6>
             <p style="font-size: 0.85rem; color: #e2e8f0; line-height: 1.6; margin: 0;">
               Video di atas memberikan pemahaman fondasi yang sangat baik. Untuk melengkapi materi kurikulum secara tuntas, website <strong>TRADE QUEST</strong> ini telah menyajikan <strong>teori-teori lanjutan yang belum tercakup di video</strong> pada <em>Modul 1</em>, seperti: <strong>Teori Proporsi Faktor Produksi (Heckscher-Ohlin)</strong>, <strong>Paradoks Leontief</strong>, <strong>Teori Siklus Hidup Produk (Raymond Vernon)</strong>, <strong>Teori Skala Ekonomi (Paul Krugman)</strong>, dan <strong>Diamond Model Keunggulan Kompetitif (Michael Porter)</strong>.
@@ -983,7 +1062,7 @@
 
         <!-- Policy Decision Options -->
         <div class="policy-options-section">
-          <h4><span>🗳️</span> Pilih Tindakan Kebijakan Anda:</h4>
+          <h4>Pilih Tindakan Kebijakan Anda:</h4>
           <div class="policy-decision-list" id="labPolicyChoices">
             <!-- Dynamically injected via JavaScript -->
           </div>
@@ -1049,7 +1128,7 @@
 
         <!-- Consequence Explanation Box -->
         <div class="consequence-box">
-          <h5><span>📋</span> Catatan Analisis Ekonomi:</h5>
+          <h5>Catatan Analisis Ekonomi:</h5>
           <p id="labConsequenceText">
             Produsen tekstil lokal terlindungi karena harga produk impor naik. Kas negara mendapat tambahan penerimaan bea masuk. Konsumen mengalami sedikit kenaikan harga pakaian impor, namun stabilitas pasar terjaga secara sehat.
           </p>
@@ -1425,7 +1504,7 @@
       <!-- Reset Progress Danger Zone -->
       <div class="danger-zone-box">
         <div class="danger-info">
-          <h5><span>⚠️</span> Atur Ulang (Reset) Seluruh Progres</h5>
+          <h5>Atur Ulang (Reset) Seluruh Progres</h5>
           <p>Jika Anda ingin mengulang seluruh perjalanan belajar dari awal, gunakan tombol reset di samping.</p>
         </div>
         <button class="btn btn-danger" onclick="openModal('resetModal')">
@@ -1458,7 +1537,7 @@
             <span class="undiksha-pill">
               <span>🏛️</span> UNDIKSHA
             </span>
-            <span style="font-size: 0.75rem; color: var(--slate-500); font-weight: 600; text-align: center; line-height: 1.4;">Mahasiswa<br>Pendidikan Ekonomi</span>
+            <span style="font-size: 0.75rem; color: var(--slate-500); font-weight: 600; text-align: center; line-height: 1.4;">Mahasiswi<br>Pendidikan Ekonomi</span>
           </div>
 
           <!-- Kolom Informasi Lengkap -->
@@ -1470,7 +1549,7 @@
             <div class="teacher-role-sub">Universitas Pendidikan Ganesha &bull; Pendidikan Ekonomi</div>
 
             <p class="teacher-bio-p">
-              Media Pembelajaran Interaktif (MPI) bertajuk <strong>TRADE QUEST: Misi Menjelajahi Dunia Perdagangan</strong> ini dirancang sebagai media pembelajaran inovatif untuk mata pelajaran <strong>Ekonomi Kelas X SMA</strong> pada materi <em>Perdagangan Internasional</em>. Menggabungkan konten visual modern, video kontekstual, simulasi kebijakan, dan gamifikasi 10 badge untuk menciptakan pengalaman belajar yang bermakna dan menyenangkan.
+              Media Pembelajaran Interaktif (MPI) bernama <strong>TRADE QUEST: Misi Menjelajahi Dunia Perdagangan</strong> ini dirancang sebagai media pembelajaran inovatif untuk mata pelajaran <strong>Ekonomi Kelas X SMA</strong> pada materi <em>Perdagangan Internasional</em>. Menggabungkan konten visual modern, video kontekstual, simulasi kebijakan, dan gamifikasi 10 badge untuk menciptakan pengalaman belajar yang bermakna dan menyenangkan.
             </p>
 
             <!-- Tabel Identitas -->
